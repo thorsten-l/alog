@@ -18,11 +18,10 @@ void alog(const char *tag, const char *file, const int line,
 
 void alog_hex(uint8_t *ptr, size_t length)
 {
-  Serial.println();
+  Serial.printf("\ndata length=0x%08x/%d\n", length, length );
 
   if (length > 0)
   {
-
     size_t index = 0;
     while (index < length)
     {
@@ -94,10 +93,6 @@ void alog_hex(uint8_t *ptr, size_t length)
 
       Serial.println("|");
     }
-  }
-  else
-  {
-    Serial.println("no data");
   }
 
   Serial.println();
