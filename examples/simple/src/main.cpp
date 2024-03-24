@@ -1,18 +1,14 @@
 #include <Arduino.h>
-#include <string.h>
 #include <alog.h>
+#include <string.h>
 
 uint8_t *lorem_ipsum =
-    (uint8_t *)"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, "
-               "sed diam nonumy eirmod tempor invidunt ut labore et dolore "
-               "magna aliquyam erat, sed diam voluptua. At vero eos et accusam "
-               "et justo duo dolores et ea rebum. Stet clita kasd gubergren, "
-               "no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem "
-               "ipsum dolor sit amet, consetetur sadipscing elitr, sed diam "
-               "nonumy eirmod tempor invidunt ut labore et dolore magna "
-               "aliquyam erat, sed diam voluptua. At vero eos et accusam et "
-               "justo duo dolores et ea rebum. Stet clita kasd gubergren, no "
-               "sea takimata sanctus est Lorem ipsum dolor sit amet.";
+    (uint8_t
+         *)"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, "
+           "sed diam nonumy eirmod tempor invidunt ut labore et dolore "
+           "justo duo dolores et ea rebum. Stet clita kasd gubergren, no "
+           "sea takimata sanctus est Lorem ipsum dolor si "
+           "\r\n\r\n\rAX1234567890A\n\r";
 
 void setup()
 {
@@ -39,8 +35,7 @@ void setup()
   ALOG_D("%s : %d", "time_t", millis());
   ALOG_D_HEAP();
   ALOG_V("password: %s", "very secret");
-  Serial.println();
-  ALOG_HEX( lorem_ipsum, strlen((char *)lorem_ipsum));
+  ALOG_HEX(lorem_ipsum, strlen((char *)lorem_ipsum));
 }
 
 void loop()

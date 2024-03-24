@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Arduino.h>
+
 #ifdef ALOG_LEVEL 
 
 #define ALOG_BUFFER_SIZE 120
@@ -39,6 +41,7 @@
 #endif
 
 extern void alog(const char *tag, const char *file, const int line, const char *function, const char *format, ...);
+extern void alog_hex( uint8_t *ptr, size_t length );
 
 #else
 #define ALOG_D_HEAP()
