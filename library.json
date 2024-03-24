@@ -1,6 +1,6 @@
 {
   "name": "alog",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "A quite simple Arduino logging library based on the C preprocessor.",
   "keywords": "logging",
   "repository":
