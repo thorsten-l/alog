@@ -6,8 +6,10 @@
 
 #if ALOG_LEVEL > 0
 #define ALOG_E(format, ...) alog("E",__FILE__, __LINE__, __FUNCTION__, format, ##__VA_ARGS__)
+#define ALOG_HEX(index, length) alog_hex(index, length)
 #else
 #define ALOG_E(format, ...)
+#define ALOG_HEX(index, length)
 #endif
 
 #if ALOG_LEVEL > 1

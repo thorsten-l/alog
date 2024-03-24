@@ -14,4 +14,17 @@ void alog(const char *tag, const char *file, const int line, const char *functio
   Serial.println(buf);
 }
 
+void alog_hex( uint8_t *ptr, size_t length )
+{
+  size_t index = 0;
+  while ( index < length )
+  {
+    if (( index % 16 ) == 0 )
+    {
+      Serial.printf( "%08x : ", index );
+    }
+    index ++;
+  }
+}
+
 #endif
