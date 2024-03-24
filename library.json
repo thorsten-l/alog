@@ -1,5 +1,5 @@
 {
-  "name": "ALOG",
+  "name": "alog",
   "version": "0.9.1",
   "description": "A quite simple Arduino logging library based on the C preprocessor.",
   "keywords": "logging",
