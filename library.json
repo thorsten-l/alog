@@ -1,0 +1,22 @@
+{
+  "name": "ALOG",
+  "version": "0.9.1",
+  "description": "A quite simple Arduino logging library based on the C preprocessor.",
+  "keywords": "logging",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/thorsten-l/alog.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Thorsten Ludewig",
+      "email": "t.ludewig@gmail.com",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
