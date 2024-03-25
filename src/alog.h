@@ -52,4 +52,6 @@ extern void alog_hex( uint8_t *ptr, size_t length );
 #define ALOG_I(format, ...)
 #define ALOG_D(format, ...)
 #define ALOG_V(format, ...)
+#define ALOG_HEX(index, length)
+#define ALOG_NL()
 #endif
