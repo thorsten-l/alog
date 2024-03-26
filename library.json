@@ -1,12 +1,12 @@
 {
-  "name": "alog",
+  "name": "l9g-alog",
   "version": "0.9.3",
   "description": "A quite simple Arduino logging library based on the C preprocessor.",
   "keywords": "logging",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/thorsten-l/alog.git"
+    "url": "https://github.com/thorsten-l/l9g-alog.git"
   },
   "authors":
   [
